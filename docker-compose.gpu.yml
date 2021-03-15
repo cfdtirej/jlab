@@ -1,0 +1,15 @@
+version: "2.4"
+services:
+  notebook-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    ports:
+      - 8888:8888
+    environment:
+      - JUPYTER_ENABLE=yes
+      - NVIDIA_VISIBLE_DEVICES=all
+    runtime: nvidia
+    volumes:
+      - ./notebook-gpu:/home/notebook
+    restart: always

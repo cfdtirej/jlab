@@ -1,0 +1,5 @@
+influxdb==5.3.1
+Keras==2.4.3
+tslearn==0.5.0.5
+tensorflow-gpu==2.4.1
+
