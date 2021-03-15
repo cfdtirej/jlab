@@ -7,5 +7,5 @@ services:
     environment:
       - JUPYTER_ENABLE=yes
     volumes:
-      - ./notebook:/home/notebook
+      - ./notebook:/notebook
     restart: always
