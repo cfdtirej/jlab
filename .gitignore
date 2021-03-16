@@ -2,4 +2,4 @@
 settings.yaml
 notebook
 notebook-gpu
-
+notebook-gpu-tf
