@@ -1,0 +1,17 @@
+FROM tensorflow/tensorflow:latest-gpu-py3
+
+RUN apt update && apt upgrade -y
+RUN apt install -y sudo \
+    curl \
+    vim \
+    wget
+
+
+WORKDIR /notebook
+
+COPY  requirements-gpu-tf.txt ./requirements-gpu-tf.txt 
+
+RUN pip install --upgrade pip && pip install -r requirements-gpu-tf.txt
+
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
+
