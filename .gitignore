@@ -1,5 +1,6 @@
+.ipynb_checkpoints
 .env
 settings.yaml
-notebook
-notebook-gpu
-notebook-gpu-tf
+notebook/*
+notebook-gpu/*
+notebook-gpu-tf/*
