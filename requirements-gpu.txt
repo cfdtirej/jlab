@@ -1,5 +1,6 @@
 influxdb==5.3.1
 tslearn==0.5.0.5
+japanize-matplotlib
 torch
 torchvision
 torchaudio
