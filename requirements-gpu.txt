@@ -5,3 +5,5 @@ PuLP==2.4
 torch
 torchvision
 torchaudio
+transformers
+
