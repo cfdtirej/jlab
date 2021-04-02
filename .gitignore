@@ -1,6 +1,10 @@
 .ipynb_checkpoints
+*.swp
 .env
+
 settings.yaml
+
 notebook/*
 notebook-gpu/*
 notebook-gpu-tf/*
+
