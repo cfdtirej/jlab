@@ -1,9 +1,17 @@
 influxdb==5.3.1
 tslearn==0.5.0.5
 japanize-matplotlib
-PuLP==2.4
+pytz
+
+# torch
 torch
 torchvision
 torchaudio
 transformers
+
+# statistics
+plotly
+PuLP==2.4
+pystan==2.19.1.1
+prophet
 
