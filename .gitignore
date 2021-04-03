@@ -2,7 +2,9 @@
 *.swp
 .env
 
+
 settings.yaml
+passwd.txt
 
 notebook/*
 notebook-gpu/*

@@ -32,5 +32,9 @@ COPY requirements-gpu.txt ./requirements-gpu.txt
 
 RUN pip install --upgrade pip && pip install -r requirements-gpu.txt
 
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
+ARG JUPYTER_TOKEN="token"
+ENV JUPYTER_TOKEN=$JUPYTER_TOKEN
+
+CMD ["sh", "-c", "jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=$JUPYTER_TOKEN"]
+# CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
 
