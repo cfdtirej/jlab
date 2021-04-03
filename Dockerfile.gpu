@@ -5,7 +5,17 @@ RUN apt install -y sudo \
     curl \
     vim \
     wget \
-    fonts-noto-cjk
+    fonts-noto-cjk \
+    build-essential \
+    libncursesw5-dev \
+    libreadline-gplv2-dev \
+    libssl-dev \
+    libgdbm-dev \
+    libc6-dev \
+    libsqlite3-dev \
+    libbz2-dev \
+    libffi-dev \
+    zlib1g-dev
 
 WORKDIR /opt
 
@@ -17,7 +27,9 @@ ENV PATH /opt/anaconda3/bin:$PATH
 
 WORKDIR /notebook
 
+# install python lib
 COPY requirements-gpu.txt ./requirements-gpu.txt
+
 RUN pip install --upgrade pip && pip install -r requirements-gpu.txt
 
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
