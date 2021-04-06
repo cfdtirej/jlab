@@ -12,7 +12,8 @@ transformers
 # statistics
 plotly
 PuLP==2.4
+statsmodels
 pystan==2.19.1.1
-prophet
+
 
 

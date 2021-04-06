@@ -5,17 +5,8 @@ RUN apt install -y sudo \
     curl \
     vim \
     wget \
-    fonts-noto-cjk \
-    build-essential \
-    libncursesw5-dev \
-    libreadline-gplv2-dev \
-    libssl-dev \
-    libgdbm-dev \
-    libc6-dev \
-    libsqlite3-dev \
-    libbz2-dev \
-    libffi-dev \
-    zlib1g-dev
+    fonts-noto-cjk 
+
 
 WORKDIR /opt
 
