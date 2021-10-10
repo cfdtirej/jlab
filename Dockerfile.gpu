@@ -10,8 +10,8 @@ RUN apt install -y sudo \
 
 WORKDIR /opt
 
-RUN wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh && \
-    sh Anaconda3-2020.11-Linux-x86_64.sh -b -p /opt/anaconda3 && \
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh && \
+    sh Anaconda3-2021.05-Linux-x86_64.sh -b -p /opt/anaconda3 && \
     rm -rf Anaconda3-2020.11-Linux-x86_64.sh
 
 ENV PATH /opt/anaconda3/bin:$PATH
